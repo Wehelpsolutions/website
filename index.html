@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Help Solutions - Professional Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body id="homePage">
+    <!-- Navigation -->
+    <nav class="whs-navbar">
+        <div class="whs-nav-container">
+            <div class="whs-nav-brand">
+                <h1 class="whs-site-title">WeHelp</h1>
+            </div>
+
+            <button class="whs-nav-toggle" id="whsNavToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="whs-nav-menu" id="navMenu">
+                <a href="#services" class="whs-nav-link">Services</a>
+                <a href="#about" class="whs-nav-link">About</a>
+                <a href="#contact" class="whs-nav-link">Contact</a>
+            </div>
+
+            <!-- <a href="gallery.html" class="whs-nav-link">Gallery</a> -->
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="whs-hero">
+        <div class="whs-hero-bg"></div> <!-- background image with blur -->
+    
+        <div class="whs-hero-overlay">
+            <h1 class="whs-hero-title">Professional Solutions for Every Need</h1>
+    
+            <div class="whs-hero-buttons">
+                <a href="https://wa.me/+919497865876" class="whs-btn whs-btn-primary">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Us
+                </a>
+                <a href="tel:+919497865876" class="whs-btn whs-btn-secondary">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Services Section -->
+    <section id="services" class="whs-services">
+        <div class="whs-container">
+            <h2 class="whs-section-title">Our Services</h2>
+            <div class="whs-services-grid">
+
+                <div class="whs-service-card" data-service="electrical">
+                    <div class="whs-service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Electrical Works</h3>
+                    <button class="whs-btn whs-btn-outline" onclick="redirectToService('electrical')">Learn More</button>
+                </div>
+                
+                <div class="whs-service-card" data-service="plumbing">
+                    <div class="whs-service-icon">
+                        <i class="fas fa-faucet"></i>
+                    </div>
+                    <h3>Plumbing Services</h3>
+                    <button class="whs-btn whs-btn-outline" onclick="redirectToService('plumbing')">Learn More</button>
+                </div>
+                <div class="whs-service-card" data-service="drip-irrigation">
+                    <div class="whs-service-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Drip Irrigation</h3>
+                    <button class="whs-btn whs-btn-outline" onclick="redirectToService('drip-irrigation')">Learn More</button>
+                </div>
+
+                <div class="whs-service-card" data-service="irrigation-automation">
+                    <div class="whs-service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Irrigation Automation</h3>
+                    <button class="whs-btn whs-btn-outline" onclick="redirectToService('irrigation-automation')">Learn More</button>
+                </div>
+
+                <div class="whs-service-card" data-service="inverter">
+                    <div class="whs-service-icon">
+                        <i class="fas fa-charging-station"></i>
+                    </div>
+                    <h3>Inverter Works</h3>
+                    <button class="whs-btn whs-btn-outline" onclick="redirectToService('inverter')">Learn More</button>
+                </div>
+
+                <div class="whs-service-card" data-service="solar">
+                    <div class="whs-service-icon">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <h3>Solar Installation</h3>
+                    <button class="whs-btn whs-btn-outline" onclick="redirectToService('solar')">Learn More</button>
+                </div>
+                
+                <div class="whs-service-card" data-service="cctv">
+                    <div class="whs-service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>CCTV Installation</h3>
+                    <button class="whs-btn whs-btn-outline" onclick="redirectToService('cctv')">Learn More</button>
+                </div>
+                
+                <div class="whs-service-card" data-service="welding">
+                    <div class="whs-service-icon">
+                        <i class="fas fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3>Welding Services</h3>
+                    <button class="whs-btn whs-btn-outline" onclick="redirectToService('welding')">Learn More</button>
+                </div>                
+
+                <div class="whs-service-card" data-service="renovation-works">
+                    <div class="whs-service-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Renovation Works</h3>
+                    <button class="whs-btn whs-btn-outline" onclick="redirectToService('renovation-works')">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="whs-about">
+        <div class="whs-container">
+            <div class="whs-about-content">
+                <div class="whs-about-text">
+                    <h2>About We Help Solutions</h2>
+                    <p>With over a decade of experience in providing comprehensive solutions, We Help Solutions has established itself as a trusted partner for residential and commercial clients.</p>
+                    <p>Our team of skilled professionals is committed to delivering high-quality services across various domains including irrigation, electrical, plumbing, and construction works.</p>
+                    <div class="whs-about-stats">
+                        <div class="whs-stat">
+                            <h3>100+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="whs-stat">
+                            <h3>70+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="whs-stat">
+                            <h3>10+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="whs-about-image">
+                    <img src="logo.png" alt="About Us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="whs-contact">
+        <div class="whs-container">
+            <h2 class="whs-section-title">Get In Touch</h2>
+            <div class="whs-contact-content">
+                <div class="whs-contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="whs-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+919497865876">+91 949 786 5876</a>
+                    </div>
+                    <div class="whs-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:info@wehelpsolutions.in">info@wehelpsolutions.in</a>
+                    </div>
+                    <div class="whs-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <a href="https://maps.app.goo.gl/ANBdF2cpsjxnDmaP8" target="_blank" rel="noopener noreferrer">
+                            Munda, Chembrakanam, Kasaragod, Kerala 671313
+                        </a>
+                    </div>
+                    
+                    <div class="whs-contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/+919497865876" target="_blank">WhatsApp Us</a>
+                    </div>
+                </div>
+
+                <div class="whs-contact-form">
+                    <h3>Send us a message</h3>
+                    <form id="contactForm">
+                        <div class="whs-form-group">
+                            <input type="text" id="contactName" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="whs-form-group">
+                            <input type="email" id="contactEmail" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="whs-form-group">
+                            <input type="tel" id="contactPhone" name="phone" placeholder="Your Phone" required>
+                        </div>
+                        <div class="whs-form-group">
+                            <select id="contactService" name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="drip-irrigation">Drip Irrigation</option>
+                                <option value="narrow-pass-irrigation">Narrow-Pass Irrigation</option>
+                                <option value="irrigation-automation">Irrigation Automation</option>
+                                <option value="solar-inverter">Solar & Inverter Works</option>
+                                <option value="electrical-plumbing">Electrical & Plumbing</option>
+                                <option value="civil-works">Civil Works & Contracting</option>
+                                <option value="cctv-welding">CCTV & Welding</option>
+                                <option value="renovation-works">Renovation Works</option>
+                            </select>
+                        </div>
+                        <div class="whs-form-group">
+                            <textarea id="contactMessage" name="message" placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="whs-btn whs-btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast Notification -->
+    <div id="whs-toast" class="whs-toast"></div>
+
+
+    <!-- Footer -->
+    <footer class="whs-footer">
+        <div class="whs-container">
+            <div class="whs-footer-content">
+                <div class="whs-footer-section">
+                    <h3>We Help Solutions</h3>
+                    <p>Your trusted partner for professional services and solutions.</p>
+                </div>
+                <div class="whs-footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="whs-footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Irrigation Systems</a></li>
+                        <li><a href="#services">Solar Solutions</a></li>
+                        <li><a href="#services">Electrical Works</a></li>
+                        <li><a href="#services">Civil Construction</a></li>
+                    </ul>
+                </div>
+                <div class="whs-footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="whs-social-links">
+                        <a href="https://www.facebook.com/wehelpsolutions.in/" class="whs-social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/wehelpsolutionss/" class="whs-social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/+919497865876" class="whs-social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://amzn.in/d/7cirqKN" class="whs-social-link"><i class="fab fa-amazon"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="whs-footer-bottom">
+                <p>&copy; 2025 We Help Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>
